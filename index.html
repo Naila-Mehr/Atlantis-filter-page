@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Atlantis</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/javascript.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css">
+
+</head>
+
+<body>
+  <!-- header -->
+  <div class="contaner-fluid">
+    <div class="header d-flex justify-content-center align-items-center flex-md-row flex-column">
+      <h5 class="pt-1">
+        ONLY FOR TODAY:: <span><b>80% Off!</b></span>
+      </h5>
+      <a class="btn mb-2 border ms-md-5 text-white shopnow" href="#" role="button">Shop Now</a>
+    </div>
+  </div>
+  <!-- Navbar -->
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg nav d-none d-lg-flex">
+      <div class="container-fluid">
+        <a class="navbar-brand brand" href="#">Welcome To</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav navlist ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-solid fa-user"></i> Hello, Sign in</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-solid fa-location-dot"></i> Track Your Order</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-solid fa-life-ring"></i> Support</a>
+            </li>
+            <li class="nav-item dropdown border-0">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="fa-solid fa-flag-usa"></i> English
+              </a>
+              <ul class="dropdown-menu dmenu">
+                <li class="p-0">
+                  <a class="dropdown-item" href="#">Action</a>
+                </li>
+                <li class="p-0">
+                  <a class="dropdown-item" href="#">Another action</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li class="p-0">
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item border-0">
+              <div class="d-lg-none p-lg-0 mt-lg-0 mt-5">
+                <i class="fa-solid fa-user p-lg-3 p-0 nicon"></i>
+                <i class="fa-solid fa-heart p-lg-3 p-0 nicon"></i>
+                <i class="fa-solid fa-cart-shopping p-lg-3 p-0 nicon"></i>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- LOgo -->
+  <div class="container">
+    <div class="row mt-2">
+      <div class="col-lg-3">
+        <div class="mt-2 d-flex justify-content-center justify-content-lg-start flex-column flex-sm-row">
+          <img src="images/logo 2.png" class="img-fluid logo d-none d-sm-flex" alt="..." />
+        </div>
+        <div class="d-flex justify-content-between">
+          <div
+            class="mt-2 d-flex justify-content-center justify-content-lg-start flex-column flex-sm-row d-flex d-sm-none">
+            <img src="images/logo 2.png" class="img-fluid logo" alt="..." />
+          </div>
+          <!-- Button trigger modal -->
+          <button type="button" class="d-sm-none d-flex justify-content-end align-item-center srch border-0"
+            data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <i class="fa-solid fa-magnifying-glass nicon mt-4"></i>
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    <button class="btn btn-outline-secondary dropdown-toggle categ" type="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      All Categories
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </li>
+                      <li>
+                        <hr class="dropdown-divider" />
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Separated link</a>
+                      </li>
+                    </ul>
+                  </h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <input type="text" placeholder="I’m shipping for.. " class="form-control"
+                    aria-label="Text input with dropdown button" />
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger">search</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="input-group mt-2 igroup d-none d-sm-flex">
+          <button class="btn btn-outline-secondary dropdown-toggle categ" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            All Categories
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li><a class="dropdown-item" href="#">Separated link</a></li>
+          </ul>
+          <input type="text" placeholder="I’m shipping for.. " class="form-control search"
+            aria-label="Text input with dropdown button" />
+          <button class="btn btn-mn" type="button">
+            <div class="position-relative relate">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </button>
+        </div>
+      </div>
+      <!-- <div class="row">
+        <div class="col-8"></div>
+        <div class="col-4"></div>
+      </div> -->
+      <div class="col-lg-3 d-flex justify-content-sm-center">
+        <div class="d-none d-lg-inline mt-2">
+          <i class="fa-solid fa-user p-lg-3 p-0 nicon"></i>
+          <i class="fa-solid fa-heart p-lg-3 p-0 nicon"></i>
+          <i class="fa-solid fa-cart-shopping p-lg-3 p-0 nicon"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- sale -->
+  <div class="container-fluid category">
+    <div class="row d-flex align-item-center p-1 mt-3">
+      <div class="col-lg-8">
+        <!-- <div class="row list ">
+              <div class="col-2"><i class="fa-solid fa-bars pe-1"></i>Categories</div>
+              <div class="col-2"><i class="fa-solid fa-crown pe-1"></i>Brands</div>
+              <div class="col-2"><i class="fa-solid fa-gears pe-1"></i>Vendors</a></div>
+              <div class="col-3"><i class="fa-solid fa-gears pe-1"></i>Sell On Atlanntis Retail</a></div>
+            </div>  -->
+        <ul class="d-none d-lg-flex list justify-content-start mt-3">
+          <li class=""><i class="fa-regular fa-user pe-1"></i>Categories</li>
+          <li class=" "><i class="fa-solid fa-crown pe-1"></i>Brands</li>
+          <li class=""><i class="fa-solid fa-gears pe-1"></i>Vendors</li>
+          <li class="">
+            <i class="fa-solid fa-gears pe-1"></i>Sell On Atlanntis Retail
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <div class="para d-flex justify-content-lg-end justify-content-start mt-0">
+          <p class="para mt-3 d-none d-lg-inline">50% OFF ONLY FOR TODAY</p>
+        </div>
+      </div>
+      <div class="row text-white">
+        <div class="col-lg-5">
+          <p class="mt-3 d-lg-none para">50% OFF ONLY FOR TODAY</p>
+        </div>
+        <div class="col-lg-7 d-flex justify-content-lg-end">
+          <nav class="navbar navbar-expand-lg nav d-flex d-lg-none border-0">
+            <div class="container-fluid">
+              <a class="navbar-brand brand d-none" href="#">Welcome To</a>
+              <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav navlist ms-auto mb-2 mb-lg-0 text-white mb-5 overflow-scroll">
+                  <li class="nav-item border-0">
+                    <a class="nav-link" href="#"><i class="fa-solid fa-user"></i> Hello, Sign in</a>
+                  </li>
+                  <li class="nav-item border-0">
+                    <a class="nav-link" href="#"><i class="fa-solid fa-location-dot"></i> Track Your
+                      Order</a>
+                  </li>
+                  <li class="nav-item border-0">
+                    <a class="nav-link" href="#"><i class="fa-solid fa-life-ring"></i> Support</a>
+                  </li>
+                  <li class="nav-item dropdown border-0">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      <i class="fa-solid fa-flag-usa"></i> English
+                    </a>
+                    <ul class="dropdown-menu bg-dark">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li>
+                        <hr class="dropdown-divider" />
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item border-0">
+                    <ul class="d-flex list flex-column justify-content-start px-0 navlist">
+                      <li class="border-0">
+                        <a href=""><i class="fa-solid fa-bars pe-1"></i> </a>Categories
+                      </li>
+                      <li class="border-0">
+                        <a href=""><i class="fa-solid fa-crown pe-1"></i></a>Brands
+                      </li>
+                      <li class="border-0">
+                        <a href=""><i class="fa-solid fa-gears pe-1"></i></a>Vendors
+                      </li>
+                      <li class="border-0">
+                        <a href=""><i class="fa-solid fa-gears pe-1"></i></a>Sell On Atlanntis Retail
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item border-0">
+                    <div class="d-lg-none ticon">
+                      <i class="fa-solid fa-user p-lg-3 px-sm-0 nicon"></i>
+                      <i class="fa-solid fa-heart p-lg-3 px-sm-0 nicon p-1 ms-4"></i>
+                      <i class="fa-solid fa-cart-shopping p-lg-3 px-sm-0 nicon p-1 ms-5"></i>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="col-lg-0 d-flex d-lg-none justify-content-end">
+        <div class="container-fluid"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Banner -->
+  <div class="container-fluid banner text-white d-flex align-items-center mt-1">
+    <h5 class="ms-5">Dresses</h5>
+  </div>
+  <!-- path -->
+  <div class="path mt-5 ms-lg-5 ms-2">
+    <p class="mb-0">Home / Categories / Women Fashion / Dresses</p>
+  </div>
+  <!-- cards -->
+  <div class="container-fluid">
+    <div class="row mt-lg-3 mt-0">
+      <div class="col-lg-3">
+        <section class="section mt-3">
+        <div class="contentcol  d-none d-lg-block">
+        <div class="div1 p-4 pb-0 ">
+          <p>ALL CATEGORIES</p>
+          <p>WOMEN FASHION DRESSES</p>
+          <p>Dresses</p>
+        </div>
+        <hr />
+        <div class="div2 p-4 pt-0 pb-0" >
+          <p class="mb-1">CONDITION</p>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="exampleCheckbox" />
+            <label class="form-check-label px-1" for="exampleCheckbox">
+              New (15)
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="exampleCheckbox" />
+            <label class="form-check-label px-1" for="exampleCheckbox">
+              Used (0)
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="exampleCheckbox" />
+            <label class="form-check-label px-1" for="exampleCheckbox">
+              Refurbished (0)
+            </label>
+          </div>
+        </div>
+        <hr>
+        <div class="div3 p-4 pt-0 pb-1">
+          <p class="mb-1">RATINGS</p>
+          <div class="d-flex mb-0">
+            <i class="fa-solid fa-star fstar"></i>
+            <i class="fa-solid fa-star  fstar"></i>
+            <i class="fa-solid fa-star  fstar"></i>
+            <i class="fa-solid fa-star  fstar"></i>
+            <i class="fa-regular fa-star bstar"></i>
+            <p class="mb-0">& Up</p>
+          </div>
+
+          <div class="d-flex mb-1">
+            <i class="fa-solid fa-star fstar"></i>
+            <i class="fa-solid fa-star fstar"></i>
+            <i class="fa-solid fa-star fstar"></i>
+            <i class="fa-regular fa-star bstar"></i>
+            <i class="fa-regular fa-star bstar"></i>
+            <p class="mb-0">& Up</p>
+          </div>
+
+          <div class="d-flex mb-1">
+            <i class="fa-solid fa-star fstar"></i>
+            <i class="fa-solid fa-star fstar"></i>
+            <i class="fa-solid fa-star fstar"></i>
+            <i class="fa-solid fa-star fstar"></i>
+            <i class="fa-regular fa-star bstar"></i>
+            <p class="mb-0">& Up</p>
+          </div>
+        </div>
+        <hr>
+        <div class="div4 p-4 pt-0 pb-0">
+          <p class="mb-1">PRICE</p>
+          <p class="mb-0">Under 20$</p>
+          <p class="mb-0">Under 20$</p>
+          <p class="mb-0">Under 20$</p>
+      <div class="">
+        <input type="text" class="js-range-slider" name="my_range" value="" data-skin="round" data-type="double" data-min="0"
+        data-max="1000" data-grid="false" />
+      </div>
+        </div>
+        <hr>
+        <div class="div5 p-4 pt-0 pb-5">
+          <label class="form-check-label px-1" for="exampleCheckbox">
+            BRAND
+          </label><br>
+          <input class="form-check-input" type="checkbox" value="" id="exampleCheckbox" />
+        </div>
+      </div>
+      </section>
+      </div>
+      <div class="col-lg-9">
+        <!-- row1 -->
+        <hr>
+        <div class="row py-1">
+          <div class="col-lg-4 ">
+        
+            <div class="d-flex justify-content-between">
+              <div class="btn-group mb-4   mb-lg-2  mt-lg-0" role="group" aria-label="Button group with nested dropdown">
+                <button type="button" class="btn btn-outline-secondary">Sort by:</button>
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-outline-secondary dropdown-toggle bestmatch" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Best Match
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                    <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                  </ul>
+                </div>
+              </div>
+            <!-- offcanva -->
+              <button class="btn btn-outline-secondary mb-4 px-3  d-block d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-bars"></i></button>
+            </div>
+            <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">Categories</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <section class="section">
+                  <div class="contentcol">
+                    <div class="div1 p-4">
+                      <p>ALL CATEGORIES</p>
+                      <p>WOMEN FASHION DRESSES</p>
+                      <p>Dresses</p>
+                    </div>
+                    <hr />
+                    <div class="div2 p-4">
+                      <p>CONDITION</p>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="exampleCheckbox" />
+                        <label class="form-check-label px-1" for="exampleCheckbox">
+                          New (15)
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="exampleCheckbox" />
+                        <label class="form-check-label px-1" for="exampleCheckbox">
+                          Used (0)
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="exampleCheckbox" />
+                        <label class="form-check-label px-1" for="exampleCheckbox">
+                          Refurbished (0)
+                        </label>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="div3 p-4">
+                      <p>RATINGS</p>
+                      <div class="d-flex">
+                        <i class="fa-solid fa-star fstar"></i>
+                        <i class="fa-solid fa-star  fstar"></i>
+                        <i class="fa-solid fa-star  fstar"></i>
+                        <i class="fa-solid fa-star  fstar"></i>
+                        <i class="fa-regular fa-star bstar"></i>
+                        <p>& Up</p>
+                      </div>
+            
+                      <div class="d-flex">
+                        <i class="fa-solid fa-star fstar"></i>
+                        <i class="fa-solid fa-star fstar"></i>
+                        <i class="fa-solid fa-star fstar"></i>
+                        <i class="fa-regular fa-star bstar"></i>
+                        <i class="fa-regular fa-star bstar"></i>
+                        <p>& Up</p>
+                      </div>
+            
+                      <div class="d-flex">
+                        <i class="fa-solid fa-star fstar"></i>
+                        <i class="fa-solid fa-star fstar"></i>
+                        <i class="fa-solid fa-star fstar"></i>
+                        <i class="fa-solid fa-star fstar"></i>
+                        <i class="fa-regular fa-star bstar"></i>
+                        <p>& Up</p>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="div4 p-4">
+                      <p>PRICE</p>
+                      <p>Under 20$</p>
+                      <p>Under 20$</p>
+                      <p>Under 20$</p>
+                  <div class="">
+                    <input type="text" class="js-range-slider" name="my_range" value="" data-skin="round" data-type="double" data-min="0"
+                    data-max="1000" data-grid="false" />
+                  </div>
+                    </div>
+                    <hr>
+                    <div class="div5 p-4">
+                      <label class="form-check-label px-1" for="exampleCheckbox">
+                        BRAND
+                      </label><br>
+                      <input class="form-check-input" type="checkbox" value="" id="exampleCheckbox" />
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+            
+          </div>
+          <div class="col-lg-5 ">
+            <div class="d-lg-flex justify-content-around">
+              <div class="form-check  pb-3 pt-lg-1">
+                <input class="form-check-input" type="checkbox" value="" id="exampleCheckbox" />
+                <label class="form-check-label px-1" for="exampleCheckbox">
+                  Free Shipping(0)
+                </label>
+              </div>
+              <div class="form-check pb-3 pt-lg-1">
+                <input class="form-check-input" type="checkbox" value="" id="exampleCheckbox" />
+                <label class="form-check-label" for="exampleCheckbox">
+                  Has Offers(0)
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 ">
+            <div class="d-flex ">
+              <div class="form-check pb-3 pt-lg-1">
+                <input class="form-check-input" type="checkbox" value="" id="exampleCheckbox" />
+                <label class="form-check-label px-1" for="exampleCheckbox">
+                  New Arrivals (0)
+                </label>
+              </div>
+              <i class="fa-solid fa-bars p-1  baar"></i>
+              <i class="fa-regular fa-calendar-days p-1 calender"></i>
+            </div>
+
+          </div>
+        </div>
+        <hr class="mt-1">
+        <!-- row2 -->
+        <div class="row mt-lg-3">
+          <div class="col-lg-4 col-sm-6 ">
+            <div class="card bcard mt-lg-0 mt-3">
+              <img src="/images/61f937ed2d368 1.png" class="card-img-top" alt="..." />
+              <div class="seller"><p class="text-white mb-0 px-1">Verified seller</p></div>
+              <div class="card-body">
+                <p class="card-text zora">Zora Floral Lace Dress - Dark Navy</p>
+                <div class="  hover-container">
+                  <div class="d-flex justify-content-between hover-trigger">
+                    <p class="card-text text-danger">70$</p>
+                  <p class="card-text">New</p>
+                  </div>
+                  <div class="hover-content">
+                <div class="btn-group  " role="group" aria-label="Basic outlined example">
+                  <button type="button" class="btn btn-outline-secondary">
+                    <i class="fa-regular fa-heart px-2"></i>
+                  </button>
+                  <button type="button" class="btn btn-outline-secondary">
+                    <i class="fa-solid fa-arrow-right px-2"></i>
+                  </button>
+                  <button type="button" class="btn btn-outline-secondary text-white bg-danger">
+                    <i class="fa-solid fa-cart-shopping px-1"></i>Add to
+                    cart
+                  </button>
+                </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 ">
+            <div class="card bcard mt-lg-0 mt-3">
+              <img src="/images/61f937ed2d368 1.png" class="card-img-top" alt="..." />
+              <div class="seller"><p class="text-white mb-0 px-1">Verified seller</p></div>
+              <div class="card-body">
+                <p class="card-text zora">Zora Floral Lace Dress - Dark Navy</p>
+                <div class="  hover-container">
+                  <div class="d-flex justify-content-between hover-trigger">
+                    <p class="card-text text-danger">70$</p>
+                  <p class="card-text">New</p>
+                  </div>
+                  <div class="hover-content">
+                <div class="btn-group  " role="group" aria-label="Basic outlined example">
+                  <button type="button" class="btn btn-outline-secondary">
+                    <i class="fa-regular fa-heart px-2"></i>
+                  </button>
+                  <button type="button" class="btn btn-outline-secondary">
+                    <i class="fa-solid fa-arrow-right px-2"></i>
+                  </button>
+                  <button type="button" class="btn btn-outline-secondary text-white bg-danger">
+                    <i class="fa-solid fa-cart-shopping px-1"></i>Add to
+                    cart
+                  </button>
+                </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 ">
+            <div class="card bcard mt-lg-0 mt-3">
+              <img src="/images/61f937ed2d368 1.png" class="card-img-top" alt="..." />
+              <div class="seller"><p class="text-white mb-0 px-1">Verified seller</p></div>
+              <div class="card-body">
+                <p class="card-text zora">Zora Floral Lace Dress - Dark Navy</p>
+                <div class="  hover-container">
+                  <div class="d-flex justify-content-between hover-trigger">
+                    <p class="card-text text-danger">70$</p>
+                  <p class="card-text">New</p>
+                  </div>
+                  <div class="hover-content">
+                <div class="btn-group  " role="group" aria-label="Basic outlined example">
+                  <button type="button" class="btn btn-outline-secondary">
+                    <i class="fa-regular fa-heart px-2"></i>
+                  </button>
+                  <button type="button" class="btn btn-outline-secondary">
+                    <i class="fa-solid fa-arrow-right px-2"></i>
+                  </button>
+                  <button type="button" class="btn btn-outline-secondary text-white bg-danger">
+                    <i class="fa-solid fa-cart-shopping px-1"></i>Add to
+                    cart
+                  </button>
+                </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <!-- footer -->
+  <footer class="foot">
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <div class="col-lg-6 mt-4">
+          <div class="main row">
+            <div class="col-md-2 col-md-3">
+              <div class="foot-icon mx-3">
+                <i class="fa-solid fa-envelope-circle-check"></i>
+              </div>
+            </div>
+            <div class="col-md-10 col-lg-9">
+              <div class="foot-text">
+                <h1>Subscription</h1>
+                <p>Subscribe Now To Get Updates On Promotions and Coupons</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mt-4">
+          <div class="input-group mb-3 group2 d-none d-sm-flex">
+            <input type="text" class="form-control input-mn mt-2" aria-label="Text input with dropdown button"
+              placeholder="Please enter your email " />
+            <button class="btn btn-mn bg-white mt-2 p-0" type="button">
+              <div class="foot-relate">
+                <p>Subscribe</p>
+              </div>
+            </button>
+          </div>
+
+          <div class="sgroup d-sm-none">
+            <input type="text" class="form-control input-mn mt-2 rounded-pill p-3"
+              aria-label="Text input with dropdown button " placeholder="Please enter your email " />
+            <button class="btn btn-mn mt-3 p-0 rounded-pill p-3 bg-danger text-white w-100" type="button">
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <hr class="foot-line ms-3 me-5" />
+      <div class="row frow">
+        <div class="col-lg-3 col-md-12">
+          <div class="foot-logo">
+            <img src="images/kNBNeogR8WJWEVUbmT66lwEKIelIFFDmLk9gMud9 1.png" alt="" />
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3">
+          <div class="foot-text mt-3">
+            <h4>Useful Links</h4>
+            <ul class="list-unstyled">
+              <li><a href="">About Us</a></li>
+              <li><a href="">Privacy Policy</a></li>
+              <li><a href="">Terms & Conditions</a></li>
+              <li><a href="">Return Policy</a></li>
+              <li><a href="">Support Policy</a></li>
+              <li><a href="">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3">
+          <div class="foot-text mt-3">
+            <h4>Make Money</h4>
+            <ul class="list-unstyled">
+              <li><a href="">Sell on Atlanntis Retail</a></li>
+              <li><a href="">Become a Merchant</a></li>
+              <li><a href="">Become a Merchant</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3">
+          <div class="foot-text mt-3">
+            <h4>Customer Service</h4>
+            <ul class="list-unstyled">
+              <li><a href="">Disputes</a></li>
+              <li><a href="">Contact Seller</a></li>
+              <li><a href="">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3">
+          <div class="foot-text mt-3">
+            <h4>Stay Connected</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script> -->
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
+  <script>
+    var $range = $(".js-range-slider"),
+         $from = $(".from"),
+         $to = $(".to"),
+         range,
+         min = $range.data('min'),
+         max = $range.data('max'),
+         from,
+         to;
+ 
+     var updateValues = function () {
+         $from.prop("value", from);
+         $to.prop("value", to);
+     };
+ 
+     $range.ionRangeSlider({
+         onChange: function (data) {
+             from = data.from;
+             to = data.to;
+             updateValues();
+         }
+     });
+ 
+     range = $range.data("ionRangeSlider");
+     var updateRange = function () {
+         range.update({
+             from: from,
+             to: to
+         });
+     };
+ 
+     $from.on("input", function () {
+         from = +$(this).prop("value");
+         if (from < min) {
+             from = min;
+         }
+         if (from > to) {
+             from = to;
+         }
+         updateValues();
+         updateRange();
+     });
+ 
+     $to.on("input", function () {
+         to = +$(this).prop("value");
+         if (to > max) {
+             to = max;
+         }
+         if (to < from) {
+             to = from;
+         }
+         updateValues();
+         updateRange();
+     });
+ 
+  </script>
+</body>
+
+</html>

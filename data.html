@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+    crossorigin="anonymous"
+  />
+    <title>Hover Content with Bootstrap 5</title>
+    <style>
+        /* Add your custom styles here */
+        .hover-container {
+            position: relative;
+        }
+
+        .hover-trigger {
+            opacity: 1;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .hover-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #f1f1f1;
+            padding: 10px;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .hover-container:hover .hover-trigger {
+            opacity: 0;
+        }
+
+        .hover-container:hover .hover-content {
+            display: block;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="hover-container">
+            <div class="btn btn-primary hover-trigger">Hover me</div>
+            <div class="hover-content">Content to display</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css">
+
+  
+
+
+    <style>
+ .irs--round .irs-bar {
+   background-color: #00C2C0;
+}
+
+.irs--round .irs-handle {
+  background-color: #00C2C0;
+  border-color: #00C2C0;
+  box-shadow: 0px 0px 0px 5px rgba(0, 194, 192, 0.2);
+}
+
+.irs--round .irs-handle.state_hover, 
+.irs--round .irs-handle:hover {
+   background-color: #00C2C0;
+}
+
+.irs--round .irs-handle {
+  width: 16px;
+  height: 16px;
+  top: 29px
+}
+
+.irs--round .irs-from, 
+.irs--round .irs-to, 
+.irs--round .irs-single {
+  background-color: transparent;
+  color: #666666;
+}
+
+.irs--round .irs-from:before, 
+.irs--round .irs-to:before, 
+.irs--round .irs-single:before,
+.irs--round .irs-min, 
+.irs--round .irs-max {
+  display: none;
+}
+
+
+    </style>
+</head>
+<body>
+    
+    <input type="text" class="js-range-slider" name="my_range" value="" data-skin="round" data-type="double" data-min="0"
+        data-max="1000" data-grid="false" />
+    
+    <input type="number" maxlength="4" value="0" class="from" />
+    <input type="number" maxlength="4" value="1000" class="to" />
+
+
+
+ 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
+ <script>
+   var $range = $(".js-range-slider"),
+        $from = $(".from"),
+        $to = $(".to"),
+        range,
+        min = $range.data('min'),
+        max = $range.data('max'),
+        from,
+        to;
+
+    var updateValues = function () {
+        $from.prop("value", from);
+        $to.prop("value", to);
+    };
+
+    $range.ionRangeSlider({
+        onChange: function (data) {
+            from = data.from;
+            to = data.to;
+            updateValues();
+        }
+    });
+
+    range = $range.data("ionRangeSlider");
+    var updateRange = function () {
+        range.update({
+            from: from,
+            to: to
+        });
+    };
+
+    $from.on("input", function () {
+        from = +$(this).prop("value");
+        if (from < min) {
+            from = min;
+        }
+        if (from > to) {
+            from = to;
+        }
+        updateValues();
+        updateRange();
+    });
+
+    $to.on("input", function () {
+        to = +$(this).prop("value");
+        if (to > max) {
+            to = max;
+        }
+        if (to < from) {
+            to = from;
+        }
+        updateValues();
+        updateRange();
+    });
+
+ </script>
+
+
+
+</body>
+</html>
